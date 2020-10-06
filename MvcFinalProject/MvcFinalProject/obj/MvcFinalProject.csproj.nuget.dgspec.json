@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\qubad\\Desktop\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj": {}
+    "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\qubad\\Desktop\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj": {
+    "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qubad\\Desktop\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj",
+        "projectUniqueName": "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj",
         "projectName": "MvcFinalProject",
-        "projectPath": "C:\\Users\\qubad\\Desktop\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj",
+        "projectPath": "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj",
         "packagesPath": "C:\\Users\\qubad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qubad\\Desktop\\MvcFinalProject\\MvcFinalProject\\obj\\",
+        "outputPath": "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\qubad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
