@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MvcFinalProject.Models
 {
-    public class HomeBlogItem
+    public class HomeBlogItem:BaseEntity
     {
-        public int Id { get; set; }
+        [MaxLength(30)]
         public string Label { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        [MaxLength(100)]
         public string Photo { get; set; }
     }
 }

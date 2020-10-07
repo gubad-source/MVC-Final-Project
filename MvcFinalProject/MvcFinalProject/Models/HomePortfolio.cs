@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace MvcFinalProject.Models
 {
-    public class HomePortfolio
+    public class HomePortfolio:BaseEntity
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        
     }
 }

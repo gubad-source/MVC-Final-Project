@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace MvcFinalProject.Models
 {
-    public class HomeServicesItem
+    public class HomeServicesItem:BaseEntity
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+       
     }
 }
