@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcFinalProject.Data;
 
 namespace MvcFinalProject.Data.Migrations
 {
     [DbContext(typeof(CorporXContext))]
-    partial class CorporXContextModelSnapshot : ModelSnapshot
+    [Migration("20201008090908_DateTimeHaveBeenRemovedFromBaseEntity")]
+    partial class DateTimeHaveBeenRemovedFromBaseEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -277,6 +279,10 @@ namespace MvcFinalProject.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
+
                     b.Property<string>("Dribble")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
@@ -300,6 +306,10 @@ namespace MvcFinalProject.Data.Migrations
                     b.Property<string>("Position")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 

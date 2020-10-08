@@ -15,6 +15,6 @@ namespace MvcFinalProject.Models
         [MaxLength(300)]
         public string Content { get; set; }
 
-        public DateTime AddedDate { get; set; }
+        //public DateTime AddedDate { get; set; }
     }
 }

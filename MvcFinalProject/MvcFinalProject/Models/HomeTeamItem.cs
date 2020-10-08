@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace MvcFinalProject.Models
 {
-    public class HomeTeamItem:BaseEntity
+    public class HomeTeamItem
     {
-        //public int Id { get; set; }
-        //public string Content { get; set; }
+        public int Id { get; set; }
         [MaxLength(30)]
         public string FullName { get; set; }
         [MaxLength(50)]
