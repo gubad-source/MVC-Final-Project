@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcFinalProject.Data;
 
 namespace MvcFinalProject.Data.Migrations
 {
     [DbContext(typeof(CorporXContext))]
-    partial class CorporXContextModelSnapshot : ModelSnapshot
+    [Migration("20201009110112_AboutusHaveBeenUpdated")]
+    partial class AboutusHaveBeenUpdated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

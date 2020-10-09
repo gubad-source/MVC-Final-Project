@@ -8,8 +8,7 @@ namespace MvcFinalProject.Models
 {
     public class HomeTestimonialItem:BaseEntity
     {
-        //public int Id { get; set; }
-        //public string Content { get; set; }
+       
 
         [MaxLength(30)]
         public string FullName { get; set; }

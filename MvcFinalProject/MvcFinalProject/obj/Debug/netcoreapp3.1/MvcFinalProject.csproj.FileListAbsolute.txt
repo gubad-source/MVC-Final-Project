@@ -276,3 +276,4 @@ C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Deb
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Home\Index.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Team.cshtml.g.cs

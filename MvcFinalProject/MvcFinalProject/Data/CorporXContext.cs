@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MvcFinalProject.Models.ViewModels;
-
+using MvcFinalProject.Models.Services;
+using MvcFinalProject.Models.Aboutus;
 
 namespace MvcFinalProject.Data
 {
@@ -15,6 +16,7 @@ namespace MvcFinalProject.Data
         {
 
         }
+        ///Home DbSets
         public DbSet<HomeAboutUs> HomeAboutUss { get; set; }
         public DbSet<HomeBlog> HomeBlogs { get; set; }
         public DbSet<HomeBlogItem> HomeBlogItems { get; set; }
@@ -30,6 +32,16 @@ namespace MvcFinalProject.Data
         public DbSet<HomeTestimonial> HomeTestimonials { get; set; }
         public DbSet<HomeTestimonialItem> HomeTestimonialItems { get; set; }
 
+        ///Services Dbsets
+        public DbSet<ContactServices>  ContactServicess { get; set; }
+        public DbSet<PromoServices>  PromoServicess { get; set; }
+        public DbSet<SolutionServices> SolutionServicess { get; set; }
+        public DbSet<SolutionServicesItem> SolutionServicesItems { get; set; }
+        public DbSet<TrafficServices> TrafficServicess { get; set; }
+        public DbSet<TrafficServicesItem> TrafficServicesItems { get; set; }
+
+        ///Aboutus DbSets
+        public DbSet<AboutusPromo>AboutusPromos { get; set; }
     }
   
 
