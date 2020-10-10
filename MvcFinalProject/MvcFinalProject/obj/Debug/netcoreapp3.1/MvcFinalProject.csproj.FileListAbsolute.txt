@@ -277,3 +277,8 @@ C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Deb
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Home\Index.cshtml.g.cs
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Team.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Home\AdminPanel.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\_ViewImports.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\_ViewStart.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Home\Create.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Home\Edit.cshtml.g.cs

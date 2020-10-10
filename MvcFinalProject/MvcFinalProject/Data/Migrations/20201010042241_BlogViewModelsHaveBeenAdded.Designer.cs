@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcFinalProject.Data;
 
 namespace MvcFinalProject.Data.Migrations
 {
     [DbContext(typeof(CorporXContext))]
-    partial class CorporXContextModelSnapshot : ModelSnapshot
+    [Migration("20201010042241_BlogViewModelsHaveBeenAdded")]
+    partial class BlogViewModelsHaveBeenAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,46 +66,6 @@ namespace MvcFinalProject.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BlogItems");
-                });
-
-            modelBuilder.Entity("MvcFinalProject.Models.FAQ.FAQItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("FAQItems");
-                });
-
-            modelBuilder.Entity("MvcFinalProject.Models.FAQ.FAQPromo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("FAQPromos");
                 });
 
             modelBuilder.Entity("MvcFinalProject.Models.HomeAboutUs", b =>

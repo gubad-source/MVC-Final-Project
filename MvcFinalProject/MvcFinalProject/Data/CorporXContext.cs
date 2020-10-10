@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using MvcFinalProject.Models.ViewModels;
 using MvcFinalProject.Models.Services;
 using MvcFinalProject.Models.Aboutus;
+using MvcFinalProject.Models.Blog;
+using MvcFinalProject.Models.FAQ;
 
 namespace MvcFinalProject.Data
 {
@@ -42,6 +44,11 @@ namespace MvcFinalProject.Data
 
         ///Aboutus DbSets
         public DbSet<AboutusPromo>AboutusPromos { get; set; }
+        ///Blog DbSet
+        public DbSet<BlogItem> BlogItems { get; set; }
+        ///FAQ Dbset
+        public DbSet<FAQItem> FAQItems { get; set; }
+        public DbSet<FAQPromo> FAQPromos { get; set; }
     }
   
 
