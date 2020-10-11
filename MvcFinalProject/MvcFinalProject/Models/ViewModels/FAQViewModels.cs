@@ -10,5 +10,6 @@ namespace MvcFinalProject.Models.ViewModels
     {
         public List<FAQItem> FAQItem { get; set; }
         public List<FAQPromo> FaqPromo { get; set; }
+        public HeroViewModel heroViewModel { get; set; }
     }
 }

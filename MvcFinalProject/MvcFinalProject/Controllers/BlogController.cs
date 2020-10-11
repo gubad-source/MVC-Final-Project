@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvcFinalProject.Data;
+using MvcFinalProject.Models;
 using MvcFinalProject.Models.ViewModels;
 
 namespace MvcFinalProject.Controllers
@@ -19,7 +20,18 @@ namespace MvcFinalProject.Controllers
         {
             BlogViewModels blogViewModels = new BlogViewModels
             {
-                BlogItem = _context.BlogItems.ToList()
+                BlogItem = _context.BlogItems.ToList(),
+
+            heroViewModel=new HeroViewModel
+            {
+                Title= "Blog Default",
+                Links = new List<string>
+                {
+                    "Home",
+                    "Blog",
+                    "Blog Default"
+                }
+            }
             };
             return View(blogViewModels);
         }

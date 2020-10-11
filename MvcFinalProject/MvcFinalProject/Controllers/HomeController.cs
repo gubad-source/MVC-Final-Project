@@ -43,6 +43,7 @@ namespace MvcFinalProject.Controllers
                 HomeTeamItem=_context.HomeTeamItems.ToList(),
                 HomeTestimonial=_context.HomeTestimonials.FirstOrDefault(),
                 HomeTestimonialItem=_context.HomeTestimonialItems.ToList()
+               
             };
             return View(homeViewModel);
         }

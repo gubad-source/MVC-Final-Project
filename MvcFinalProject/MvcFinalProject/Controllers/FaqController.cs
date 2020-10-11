@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvcFinalProject.Data;
+using MvcFinalProject.Models;
 using MvcFinalProject.Models.ViewModels;
 
 namespace MvcFinalProject.Controllers
@@ -20,7 +21,17 @@ namespace MvcFinalProject.Controllers
             FAQViewModels faqViewModels = new FAQViewModels
             {
                 FAQItem = _context.FAQItems.ToList(),
-                FaqPromo=_context.FAQPromos.ToList()
+                FaqPromo=_context.FAQPromos.ToList(),
+                heroViewModel=new HeroViewModel
+                {
+                    Title= "FAQ Page",
+                    Links=new List<string>
+                    {
+                        "Home",
+                        "Pages",
+                        "FAQ"
+                    }
+                }
             };
             return View(faqViewModels);
         }

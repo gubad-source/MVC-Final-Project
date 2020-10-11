@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvcFinalProject.Data;
+using MvcFinalProject.Models;
 using MvcFinalProject.Models.ViewModels;
 
 namespace MvcFinalProject.Controllers
@@ -19,10 +20,20 @@ namespace MvcFinalProject.Controllers
         {
             AboutusViewModels aboutUsViewModels = new AboutusViewModels
             {
-                AboutusPromo = _context.AboutusPromos.ToList()
-               
+                AboutusPromo = _context.AboutusPromos.ToList(),
+               heroViewModel=new HeroViewModel
+               {
+                   Title= "About Us",
+                   Links=new List<string>
+                   {
+                       "Home",
+                       "Pages",
+                       "About us"
+                   }
+
+               }
             };
-            return View();
+            return View(aboutUsViewModels);
         }
     }
 }

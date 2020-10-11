@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvcFinalProject.Data;
+using MvcFinalProject.Models;
 using MvcFinalProject.Models.ViewModels;
 
 namespace MvcFinalProject.Controllers
@@ -24,7 +25,17 @@ namespace MvcFinalProject.Controllers
                 SolutionServices=_context.SolutionServicess.FirstOrDefault(),
                 SolutionServicesItem=_context.SolutionServicesItems.ToList(),
                 TrafficServices=_context.TrafficServicess.FirstOrDefault(),
-                TrafficServicesItem=_context.TrafficServicesItems.ToList()
+                TrafficServicesItem=_context.TrafficServicesItems.ToList(),
+                heroViewModel=new HeroViewModel
+                {
+                    Title= "Our Services",
+                    Links=new List<string>
+                    {
+                        "Home",
+                        "Pages",
+                        "Services"
+                    }
+                }
             };
             return View(servicesViewModels);
         }

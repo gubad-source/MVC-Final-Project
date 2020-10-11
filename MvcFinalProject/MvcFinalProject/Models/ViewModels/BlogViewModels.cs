@@ -9,5 +9,6 @@ namespace MvcFinalProject.Models.ViewModels
     public class BlogViewModels
     {
         public List<BlogItem> BlogItem { get; set; }
+        public HeroViewModel heroViewModel { get; set; }
     }
 }

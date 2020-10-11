@@ -22,5 +22,6 @@ namespace MvcFinalProject.Models.ViewModels
         public List<HomeTeamItem> HomeTeamItem { get; set; }
         public HomeTestimonial HomeTestimonial { get; set; }
         public List<HomeTestimonialItem>  HomeTestimonialItem { get; set; }
+       
     }
 }
