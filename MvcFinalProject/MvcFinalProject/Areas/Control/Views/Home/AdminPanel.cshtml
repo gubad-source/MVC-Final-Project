@@ -370,10 +370,10 @@
                                             <td>@item.Label</td>
                                             <td>@item.Photo</td>
                                             <td>
-                                                <a class="text-info" asp-area="control" asp-controller="home" asp-action="edit">
+                                                <a class="text-info" asp-area="control" asp-controller="home" asp-action="edit" asp-route-id="@item.Id">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
-                                                <a onclick="return confirm('are you sure?')" class="text-danger">
+                                                <a onclick="return confirm('are you sure?')" class="text-danger" asp-area="control" asp-controller="home" asp-action="delete" asp-route-id="@item.Id">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
                                             </td>

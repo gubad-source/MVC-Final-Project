@@ -36,10 +36,11 @@ namespace MvcFinalProject.Areas.Control.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(string Title,string Content,string Photo,string Label)
+        public IActionResult Create(int Id,string Title,string Content,string Photo,string Label)
         {
             HomeBlogItem homeBlogItem = new HomeBlogItem
             {
+                Id=Id,
                 Title=Title,
                 Content=Content,
                 Photo=Photo,
