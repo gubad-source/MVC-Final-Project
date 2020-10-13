@@ -9,6 +9,8 @@ using MvcFinalProject.Models.Services;
 using MvcFinalProject.Models.Aboutus;
 using MvcFinalProject.Models.Blog;
 using MvcFinalProject.Models.FAQ;
+using MvcFinalProject.Models.Login;
+using MvcFinalProject.Models.Projects;
 
 namespace MvcFinalProject.Data
 {
@@ -49,6 +51,12 @@ namespace MvcFinalProject.Data
         ///FAQ Dbset
         public DbSet<FAQItem> FAQItems { get; set; }
         public DbSet<FAQPromo> FAQPromos { get; set; }
+        ///Login
+        public DbSet<User>Users  { get; set; }
+        ///Project
+        public DbSet<ProjectPricing> ProjectPricings { get; set; }
+        public DbSet<ProjectDetail> ProjectDetails { get; set; }
+
     }
   
 

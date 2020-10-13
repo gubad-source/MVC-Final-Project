@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8Yo3S98kmafNih97bWIQWLtGYLdgTMuH6IBGbE4gVkNxjE5en/KXz2H+yLoSpS7wpoQ0dHke8BH57Snk7Ktcpg==",
+  "dgSpecHash": "BDFj0oGcasULuh6WMBoe6uLYbCoTNjmLCIlnKBwbWCiMnTgooQCV/pAynS4tulFTBzVeFPOIJQM2PXCJReB0iQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\qubad\\Desktop\\MVC-Final-Project\\MvcFinalProject\\MvcFinalProject\\MvcFinalProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\qubad\\.nuget\\packages\\cryptohelper\\3.0.2\\cryptohelper.3.0.2.nupkg.sha512",
+    "C:\\Users\\qubad\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.0.1\\microsoft.aspnetcore.cryptography.internal.2.0.1.nupkg.sha512",
+    "C:\\Users\\qubad\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\2.0.1\\microsoft.aspnetcore.cryptography.keyderivation.2.0.1.nupkg.sha512",
     "C:\\Users\\qubad\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\qubad\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\qubad\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

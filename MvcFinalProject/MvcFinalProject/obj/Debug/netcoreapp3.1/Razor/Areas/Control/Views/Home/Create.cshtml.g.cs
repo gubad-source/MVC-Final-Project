@@ -33,8 +33,15 @@ using MvcFinalProject.Models.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\Areas\Control\Views\_ViewImports.cshtml"
+using MvcFinalProject.Models.Login;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3d70f68293682fd3d7b7e5a5d89e697888da68b5", @"/Areas/Control/Views/Home/Create.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"07911184a630866a88e8e3de85ac8b39fa17c25f", @"/Areas/Control/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d145cc02e87e79f41f44a7e7c12fb8889ae0b97f", @"/Areas/Control/Views/_ViewImports.cshtml")]
     public class Areas_Control_Views_Home_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +71,7 @@ using MvcFinalProject.Models.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<div class=\"container-fluid\">\r\n    <div class=\"row mt-3\">\r\n        <div class=\"col-lg-6 ml-5\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d70f68293682fd3d7b7e5a5d89e697888da68b54045", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d70f68293682fd3d7b7e5a5d89e697888da68b54275", async() => {
                 WriteLiteral(@"
                 <div class=""form-group"">
                     <div class=""form-group"">

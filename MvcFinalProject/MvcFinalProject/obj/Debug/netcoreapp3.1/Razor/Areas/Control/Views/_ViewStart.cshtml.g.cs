@@ -33,8 +33,15 @@ using MvcFinalProject.Models.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\Areas\Control\Views\_ViewImports.cshtml"
+using MvcFinalProject.Models.Login;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Areas/Control/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"07911184a630866a88e8e3de85ac8b39fa17c25f", @"/Areas/Control/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d145cc02e87e79f41f44a7e7c12fb8889ae0b97f", @"/Areas/Control/Views/_ViewImports.cshtml")]
     public class Areas_Control_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -1,4 +1,4 @@
-﻿
+﻿@model LoginViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -46,10 +46,12 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                            <input asp-for="Email" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                           <span asp-validation-for="Email"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <input asp-for="Password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <span asp-validation-for="Password"></span>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -86,6 +88,10 @@
         </div>
 
     </div>
+    @section Scripts{
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
 
     <!-- Bootstrap core JavaScript-->
     <script src="~/control/vendor/jquery/jquery.min.js"></script>

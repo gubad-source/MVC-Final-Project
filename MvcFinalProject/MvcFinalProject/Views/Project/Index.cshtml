@@ -1,9 +1,11 @@
-﻿
+﻿@model ProjectViewModels
 @{
     ViewData["Title"] = "Index";
 }
 
-<partial name="_Hero" />
+<partial name="_Hero" model="Model.heroViewModel"/>
+
+
 <!--our work or portfolio section start-->
 <section class="our-portfolio-section ptb-100">
     <div class="container">
@@ -142,30 +144,34 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md">
-                <div class="card text-center single-pricing-pack">
-                    <div class="pt-4"><h5>Basic</h5></div>
-                    <div class="pricing-img mt-4">
-                        <img src="img/basic.svg" alt="pricing img" class="img-fluid">
-                    </div>
-                    <div class="card-header py-4 border-0 pricing-header">
-                        <div class="h1 text-center mb-0">$<span class="price font-weight-bolder">29</span></div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
-                            <li>Push Notifications</li>
-                            <li>Data Transfer</li>
-                            <li>SQL Database</li>
-                            <li>Search &amp; SEO Analytics</li>
-                            <li>24/7 Phone Support</li>
-                            <li>2 months technical support</li>
-                            <li>2+ profitable keyword</li>
-                        </ul>
-                        <a href="#" class="btn outline-btn mb-3" target="_blank">Purchase now</a>
+            @foreach (var item in Model.ProjectPricing)
+            {
+                <div class="col-lg-4 col-md">
+                    <div class="card text-center single-pricing-pack">
+                        <div class="pt-4"><h5>@item.Title</h5></div>
+                        <div class="pricing-img mt-4">
+                            <img src="img/basic.svg" alt="pricing img" class="img-fluid">
+                        </div>
+                        <div class="card-header py-4 border-0 pricing-header">
+                            <div class="h1 text-center mb-0">$<span class="price font-weight-bolder">@item.Content</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
+                                <li>Push Notifications</li>
+                                <li>Data Transfer</li>
+                                <li>SQL Database</li>
+                                <li>Search &amp; SEO Analytics</li>
+                                <li>24/7 Phone Support</li>
+                                <li>2 months technical support</li>
+                                <li>2+ profitable keyword</li>
+                            </ul>
+                            <a href="#" class="btn outline-btn mb-3" target="_blank">Purchase now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md">
+            }
+
+            @*<div class="col-lg-4 col-md">
                 <div class="card popular-price text-center single-pricing-pack">
                     <div class="pt-4"><h5>Standard</h5></div>
                     <div class="pricing-img mt-4">
@@ -211,7 +217,7 @@
                         <a href="#" class="btn outline-btn mb-3" target="_blank">Purchase now</a>
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
     </div>
 </section>
