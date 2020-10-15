@@ -11,8 +11,8 @@ using MvcFinalProject.Models.Login;
 
 namespace MvcFinalProject.Areas.Control.Controllers
 {
-    [Area("control")]
-    [TypeFilter(typeof(Auth))]
+    [Area("Control")]
+    //[TypeFilter(typeof(Auth))]
     public class HomeController : Controller
     {
         private User user => RouteData.Values["User"] as User;
@@ -21,6 +21,7 @@ namespace MvcFinalProject.Areas.Control.Controllers
         {
             _context = context;
         }
+        [TypeFilter(typeof(Auth))]
         public IActionResult Register()
         {
             return View();
@@ -50,6 +51,7 @@ namespace MvcFinalProject.Areas.Control.Controllers
         {
             return View();
         }
+       
         [HttpPost]
         public IActionResult Index(LoginViewModel model)
         {

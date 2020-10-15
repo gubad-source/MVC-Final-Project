@@ -21,12 +21,12 @@ namespace MvcFinalProject.Filters
             bool hasToken = context.HttpContext.Request.Cookies.TryGetValue("token", out string token);
             if (!hasToken)
             {
-                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { action = "index", controller = "home", area = "control" }));
+                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { action = "index", controller = "home", P=new { area = "control" } }));
             }
             var user = _context.Users.FirstOrDefault(u => u.Token == token);
             if (user == null)
             {
-                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { action = "index", controller = "home", area = "control" }));
+                context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { action = "index", controller = "home", P = new { area = "control" } }));
             }
             context.RouteData.Values["User"] = user;
             base.OnActionExecuting(context);

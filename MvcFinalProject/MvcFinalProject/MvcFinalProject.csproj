@@ -25,7 +25,6 @@
   <ItemGroup>
     <Folder Include="Areas\Control\Data\" />
     <Folder Include="Areas\Control\Models\" />
-    <Folder Include="Areas\Control\Views\Shared\" />
   </ItemGroup>
 
 </Project>

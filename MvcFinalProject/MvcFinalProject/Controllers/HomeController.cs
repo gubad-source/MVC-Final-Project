@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MvcFinalProject.Data;
+using MvcFinalProject.Filters;
 using MvcFinalProject.Models;
 using MvcFinalProject.Models.ViewModels;
 
 namespace MvcFinalProject.Controllers
 {
+    //[TypeFilter(typeof(Auth))]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

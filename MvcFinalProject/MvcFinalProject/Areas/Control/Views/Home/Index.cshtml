@@ -1,4 +1,7 @@
-﻿@model LoginViewModel
+﻿@{
+    Layout = null;
+}
+@model LoginViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -44,10 +47,10 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" asp-action="Index" asp-controller="Home">
                                         <div class="form-group">
                                             <input asp-for="Email" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
-                                           <span asp-validation-for="Email"></span>
+                                            <span asp-validation-for="Email"></span>
                                         </div>
                                         <div class="form-group">
                                             <input asp-for="Password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
@@ -59,9 +62,10 @@
                                                 <label class="custom-control-label" for="customCheck">Remember Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </button>
+                                       
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -88,10 +92,8 @@
         </div>
 
     </div>
-    @section Scripts{
-        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    }
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="~/control/vendor/jquery/jquery.min.js"></script>
