@@ -27,4 +27,19 @@
     <Folder Include="Areas\Control\Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.min.js" />
+    <None Include="wwwroot\js\jquery.countdown.min.js" />
+    <None Include="wwwroot\js\jquery.easing.min.js" />
+    <None Include="wwwroot\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\js\jquery.mb.YTPlayer.min.js" />
+    <None Include="wwwroot\js\mixitup.min.js" />
+    <None Include="wwwroot\js\owl.carousel.min.js" />
+    <None Include="wwwroot\js\popper.min.js" />
+    <None Include="wwwroot\js\scripts.js" />
+    <None Include="wwwroot\js\validator.min.js" />
+    <None Include="wwwroot\js\wow.min.js" />
+  </ItemGroup>
+
 </Project>

@@ -43,6 +43,7 @@ namespace MvcFinalProject.Data
         public DbSet<SolutionServicesItem> SolutionServicesItems { get; set; }
         public DbSet<TrafficServices> TrafficServicess { get; set; }
         public DbSet<TrafficServicesItem> TrafficServicesItems { get; set; }
+        public DbSet<ServicesDetail> ServicesDetails { get; set; }
 
         ///Aboutus DbSets
         public DbSet<AboutusPromo>AboutusPromos { get; set; }

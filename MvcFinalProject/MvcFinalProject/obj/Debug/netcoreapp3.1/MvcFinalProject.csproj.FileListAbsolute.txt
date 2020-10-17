@@ -201,7 +201,6 @@ C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Deb
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.csprojAssemblyReference.cache
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.AssemblyInfoInputs.cache
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.AssemblyInfo.cs
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.RazorAssemblyInfo.cache

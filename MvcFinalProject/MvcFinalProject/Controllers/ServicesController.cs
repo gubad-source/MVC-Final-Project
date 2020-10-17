@@ -41,7 +41,13 @@ namespace MvcFinalProject.Controllers
         }
         public IActionResult Detail()
         {
-            return View();
+            ServicesViewModels servicesViewModels = new ServicesViewModels
+            {
+                ServicesDetail=_context.ServicesDetails.FirstOrDefault()
+            };
+            return View(servicesViewModels);
         }
+           
+        
     }
 }

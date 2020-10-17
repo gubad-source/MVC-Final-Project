@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MvcFinalProject",
+    "\\MvcFinalProject\\MvcFinalProject",
+    "\\MvcFinalProject\\MvcFinalProject\\Areas",
+    "\\MvcFinalProject\\MvcFinalProject\\Areas\\Control",
+    "\\MvcFinalProject\\MvcFinalProject\\Areas\\Control\\Views",
+    "\\MvcFinalProject\\MvcFinalProject\\Areas\\Control\\Views\\Home",
+    "\\MvcFinalProject\\MvcFinalProject\\Areas\\Control\\Views\\Shared",
+    "\\MvcFinalProject\\MvcFinalProject\\Filters",
+    "\\MvcFinalProject\\MvcFinalProject\\Helpers"
+  ],
+  "SelectedNode": "\\MvcFinalProject\\MvcFinalProject\\Helpers\\FileManager.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -572,6 +572,30 @@ namespace MvcFinalProject.Data.Migrations
                     b.ToTable("PromoServicess");
                 });
 
+            modelBuilder.Entity("MvcFinalProject.Models.Services.ServicesDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Content1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Content2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Content3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ServicesDetails");
+                });
+
             modelBuilder.Entity("MvcFinalProject.Models.Services.SolutionServices", b =>
                 {
                     b.Property<int>("Id")

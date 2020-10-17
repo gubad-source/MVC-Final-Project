@@ -14,6 +14,7 @@ namespace MvcFinalProject.Models.ViewModels
         public List <SolutionServicesItem>  SolutionServicesItem { get; set; }
         public TrafficServices TrafficServices { get; set; }
         public List<TrafficServicesItem> TrafficServicesItem { get; set; }
+        public ServicesDetail ServicesDetail { get; set; }
         public HeroViewModel heroViewModel { get; set; }
     }
 }

@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CryptoHelper;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MvcFinalProject.Data;
 using MvcFinalProject.Filters;
+using MvcFinalProject.Helpers;
 using MvcFinalProject.Models;
 using MvcFinalProject.Models.Login;
 
 namespace MvcFinalProject.Areas.Control.Controllers
 {
     [Area("Control")]
-    //[TypeFilter(typeof(Auth))]
     public class HomeController : Controller
     {
         private User user => RouteData.Values["User"] as User;
         private readonly CorporXContext _context;
-        public HomeController (CorporXContext context)
+        private readonly IWebHostEnvironment _webhost;
+        public HomeController (CorporXContext context,
+                                IWebHostEnvironment webHost)
         {
             _context = context;
+            _webhost = webHost;
         }
         [TypeFilter(typeof(Auth))]
         public IActionResult Register()
@@ -88,14 +93,15 @@ namespace MvcFinalProject.Areas.Control.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(int Id, string Title, string Content, string Photo, string Label)
+        public IActionResult Create(int Id, string Title, string Content, string Photo,IFormFile file, string Label)
         {
+            FileManager manager = new FileManager(_webhost);
             HomeBlogItem homeBlogItem = new HomeBlogItem
             {
                 Id = Id,
                 Title = Title,
                 Content = Content,
-                Photo = Photo,
+                Photo = manager.Upload(file),
                 Label = Label
             };
             _context.HomeBlogItems.Add(homeBlogItem);

@@ -17,7 +17,7 @@ namespace MvcFinalProject.Helpers
         }
         public string Upload(IFormFile file, string allowedTypes = "image/png|image/jpeg|image/gif|image/jpg", int maxSize = 4096)
         {
-            string UploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+            string UploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "img");
             if (file == null)
             {
                 string fileName = "about-1.jpg";

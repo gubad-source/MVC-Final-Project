@@ -9,39 +9,22 @@
 <section class="promo-section pt-100">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-lg-4">
-                <div class="single-promo-block p-3 rounded d-flex justify-content-between">
-                    <div class="promo-block-icon mr-4">
-                        <span class="fas fa-brain icon-md color-primary"></span>
-                    </div>
-                    <div class="promo-block-content">
-                        <h5>Cyber Security</h5>
-                        <p>Enthusiastically scale mission-critical imperatives rather than an expanded array.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-4">
-                <div class="single-promo-block p-3 rounded d-flex justify-content-between">
-                    <div class="promo-block-icon mr-4">
-                        <span class="fas fa-bezier-curve icon-md color-primary"></span>
-                    </div>
-                    <div class="promo-block-content">
-                        <h5>Creative Design</h5>
-                        <p>Compellingly promote collaborative products without synergistic schemas. </p>
+            @foreach (var item in Model.AboutusPromo)
+            {
+                <div class="col-md-4 col-lg-4">
+                    <div class="single-promo-block p-3 rounded d-flex justify-content-between">
+                        <div class="promo-block-icon mr-4">
+                            <span class="fas fa-brain icon-md color-primary"></span>
+                        </div>
+                        <div class="promo-block-content">
+                            <h5>@item.Title</h5>
+                            <p>@item.Content</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-4">
-                <div class="single-promo-block p-3 rounded d-flex justify-content-between">
-                    <div class="promo-block-icon mr-4">
-                        <span class="fas fa-life-ring icon-md color-primary"></span>
-                    </div>
-                    <div class="promo-block-content">
-                        <h5>Cloud Services</h5>
-                        <p>Rapidiously create cooperative resources rather than client-based leadership skills.</p>
-                    </div>
-                </div>
-            </div>
+            }
+
+          
         </div>
     </div>
 </section>
@@ -517,5 +500,5 @@
     </div>
 </div>
 <!--client section start-->
-@*</div>*@
+
 <!--body content wrap end-->
