@@ -286,3 +286,4 @@ C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Deb
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header.cshtml.g.cs
 C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\Razor\Areas\Control\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\qubad\Desktop\MVC-Final-Project\MvcFinalProject\MvcFinalProject\obj\Debug\netcoreapp3.1\MvcFinalProject.csprojAssemblyReference.cache
